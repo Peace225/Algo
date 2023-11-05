@@ -1,0 +1,20 @@
+ALGORITHM Produit_scalaire
+VAR
+    Tableau v1 [3] : réel
+    Tableau v2 [3] : réel
+    i : entier
+    P : réel
+
+BEGIN
+    Pour i <-- 0 à 2 pas 1 Faire
+        Ecrire ("Donner l'élément ", i+1," du vecteur v1 ")
+        Lire(v1[i] )
+        Ecrire ("Donner l'élément ", i+1," du vecteur v2 ")
+        Lire(v2[i] )
+    fin Pour
+    P <-- 0
+    Pour i <-- 0 à 2 pas 1 Faire
+        P <--  P + v1[i]* v2[i]
+    fin Pour
+    Ecrire("Le produit scalaire des vecteurs v1 et v2 est : " ,  P)
+END

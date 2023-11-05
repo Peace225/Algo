@@ -1,0 +1,30 @@
+ALGORITHM tableau
+VAR
+    tableaux Ensemble1[3] : entier
+    tableaux Ensemble2[4] : entier
+    i :entier
+    S : entier
+
+BEGIN
+    Pour i <-- 0 à 3 pas 1 faire
+        Ecrire ("Donner la valeur de l' élement ", i , " : ")
+        Lire (Ensemble1[i])
+    fin Pour
+    Pour i <-- 0 à 4 pas 1 faire
+        Ecrire ("Donner la valeur de l' élement ", i , " : ")
+        Lire (Ensemble2[i])
+    fin Pour
+
+    S <-- 0
+    
+    Pour i <-- 0 à 3 pas 1 faire
+        S <-- S + N[i]
+       
+    fin Pour
+    Pour i <-- 0 à 4 pas 1 faire
+        S <-- S + N[i]
+       
+    fin Pour
+    Ecrire ("La somme est : " , S)
+    
+END
